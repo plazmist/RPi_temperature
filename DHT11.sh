@@ -1,4 +1,5 @@
 #!/bin/sh 
+
 DIR=/home/komissar/Scripts/Temperature
 DAY=`date "+%Y-%m-%d"`
 DATE=`date "+%Y-%m-%d %H:%M:%S"`

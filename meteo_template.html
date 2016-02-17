@@ -4,9 +4,9 @@
 	<title>Temperature</title>
 </head>
 <body>
-	<div id="temperature" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
-	<div id="humidity" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
-	<div id="core" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
+	<div id="temperature" style="min-width: 310px; height: 300px; margin: 0 auto"></div>
+	<div id="humidity" style="min-width: 310px; height: 300px; margin: 0 auto"></div>
+	<div id="core" style="min-width: 310px; height: 300px; margin: 0 auto"></div>
  	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 	<script src="http://code.highcharts.com/highcharts.js"></script>
 	<script src="http://code.highcharts.com/modules/exporting.js"></script>
@@ -23,10 +23,7 @@
 	            type: 'spline'
 	        },
 	        title: {
-	            text: 'Temperature by DHT11 in Plazma RPI {{DAY}}'
-	        },
-	        subtitle: {
-	            text: 'Irregular time data in Highcharts JS'
+	            text: 'Temperature by DHT11 {{DAY}}'
 	        },
 	        xAxis: {
 	            type: 'datetime',
@@ -69,10 +66,7 @@
 	            type: 'spline'
 	        },
 	        title: {
-	            text: 'Humidity by DHT11 in Plazma RPI {{DAY}}'
-	        },
-	        subtitle: {
-	            text: 'Irregular time data in Highcharts JS'
+	            text: 'Humidity by DHT11 {{DAY}}'
 	        },
 	        xAxis: {
 	            type: 'datetime',
@@ -117,9 +111,6 @@
 	        },
 	        title: {
 	            text: 'Raspberry Pi Core temperature {{DAY}}'
-	        },
-	        subtitle: {
-	            text: 'Irregular time data in Highcharts JS'
 	        },
 	        xAxis: {
 	            type: 'datetime',

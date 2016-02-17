@@ -27,7 +27,7 @@ sed -i '/{{TEMPERATURE}}/d' $DIR/meteo.html
 sed -i "/{{HUMIDITY}}/r $DIR/humidity.dat" $DIR/meteo.html
 sed -i '/{{HUMIDITY}}/d' $DIR/meteo.html
 
-sed -i "/{{CORE}}/r $DIR/humidity.dat" $DIR/meteo.html
+sed -i "/{{CORE}}/r $DIR/core.dat" $DIR/meteo.html
 sed -i '/{{CORE}}/d' $DIR/meteo.html
 
 sudo cp $DIR/meteo.html /var/www/

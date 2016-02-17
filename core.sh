@@ -1,6 +1,6 @@
 #!/bin/sh
 
-DIR=/home/komissar/Scripts/Temperature
+DIR=/home/komissar/Scripts/RPi_temperature
 DAY=`date "+%Y-%m-%d"`
 DATE=`date "+%Y-%m-%d %H:%M:%S"`
 VALUE=`/opt/vc/bin/vcgencmd measure_temp | cut -c 6-9` 

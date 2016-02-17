@@ -1,13 +1,14 @@
 #!/bin/sh 
 
-DIR=/home/komissar/Scripts/RPi_temperature
+DIR="/home/komissar/Scripts/RPi_temperature"
+Adafruit_DHT="/home/komissar/Scripts/Adafruit-Raspberry-Pi-Python-Code/Adafruit_DHT_Driver/Adafruit_DHT"
 DAY=`date "+%Y-%m-%d"`
 DATE=`date "+%Y-%m-%d %H:%M:%S"`
-VALUE=`sudo /home/komissar/Scripts/Adafruit-Raspberry-Pi-Python-Code/Adafruit_DHT_Driver/Adafruit_DHT 11 4 | grep Temp`
+VALUE=`sudo ${Adafruit_DHT} 11 4 | grep Temp`
 while [ -z "$VALUE" ]
 do
         sleep 7 
-        VALUE=`sudo /home/komissar/Scripts/Adafruit-Raspberry-Pi-Python-Code/Adafruit_DHT_Driver/Adafruit_DHT 11 4 | grep Temp`
+        VALUE=`sudo ${Adafruit_DHT} 11 4 | grep Temp`
 done
 TMP=$(echo $VALUE | cut -d' ' -f 3)
 HUM=$(echo $VALUE | cut -d' ' -f 7)

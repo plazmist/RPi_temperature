@@ -9,3 +9,4 @@ sudo cp /var/www/meteo.html /var/www/old/meteo_${DAY}.html
 
 rm $DIR/temperature.dat
 rm $DIR/humidity.dat
+rm $DIR/core.dat
